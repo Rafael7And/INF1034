@@ -40,7 +40,9 @@ sleep (1)
 t.clear ()
 
 #------------------------ bandeira costa pobre
-
+t.pu ()
+t.goto (0,00)
+t.pd ()
 t.fillcolor ('#001385')
 t.begin_fill ()
 
@@ -99,6 +101,9 @@ t.fd (350)
 sleep (1)
 t.clear ()
 #------------------------ Guiné - Bissau#####################
+t.pu ()
+t.goto (0,00)
+t.pd ()
 
 t.pu()
 t.goto (-200,100)
