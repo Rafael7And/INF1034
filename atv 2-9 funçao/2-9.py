@@ -6,6 +6,21 @@ t= Turtle()
 t.shape ("turtle")
 #plano cartesiano
 
+def plano_cartesiano():
+    t.pu()
+    t.goto(-400,0)
+    t.pd()
+    t.goto(400,0)
+    t.stamp()
+
+    t.pu()
+    t.goto(0,-400)
+    t.pd()
+    t.goto(0,400)
+    t.lt(90)
+    t.stamp()
+    t.rt(90)
+plano_cartesiano()
 
 # t.pu()
 # t.goto(-400, 0)
@@ -55,8 +70,8 @@ def desenha_12 (x,y,lado, cor):
         t.lt (30)
     t.end_fill ()
 
-x = randint(-99,-25)
-y = randint(-150,-10)
+x = randint(-250, -120)
+y = randint(-300, -120)
 desenha_12 (x,y,-50,'blue')
 
 # #3 forma
@@ -65,7 +80,7 @@ def desenha_3(x,y,lado,cor):
     t.goto(x,y)
     t.pd()
 
-    t.fillcolor("red")
+    t.fillcolor(cor)
     t.begin_fill()
 
     t.forward (lado)
@@ -84,12 +99,12 @@ desenha_3(x, y, -90, 'red')
 
 
 # #4 forma
-def desenha_4 (x,y,lado, cor):
+def desenha_4(x,y,lado, cor):
     t.pu()
     t.goto(x,y)
     t.pd()
 
-    t.color (cor)
+    t.color(cor)
     t.begin_fill()
 
     for cont in range(3):
