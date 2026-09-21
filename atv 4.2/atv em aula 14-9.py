@@ -156,12 +156,4 @@ sleep(3)
 t.clear()
 
 
-
-
-
-
-
-
-
-
 mainloop()
