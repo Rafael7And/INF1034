@@ -75,10 +75,10 @@ while running == True:
 
     nuvemVai += 1
     if nuvemVai > 800:
-        nuvemVai = -120
+        nuvemVai = 0
 
     nuvemVai2 += 1
     if nuvemVai2 > 800:
-        nuvemVai2 = -120
+        nuvemVai2 = 0
 
     display.update()
