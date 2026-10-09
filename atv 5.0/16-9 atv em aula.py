@@ -1,6 +1,8 @@
 #pip install pygame -no terminal
 from pygame import *
 
+
+
 init()
 
 screen = display.set_mode ((800,600))
@@ -10,7 +12,6 @@ gandalf = transform.scale(gandalf, (200, 200))
 mixer.init()
 mixer.music.load("you-shall-not-pass_1.mp3")
 mixer.music.play(-1)
-
 nuvemVai = 500
 nuvemVai2 = 200
 
@@ -60,7 +61,7 @@ while running == True:
     #shall you not pass
     texto = fonte.render("shall you not pass?", True, "black")
     screen.blit(texto, (300,110))
-    
+        
     screen.blit(gandalf, (x_gandalf, 320)) #image of gandalf
     screen.blit(balrog, (x_balrog, 300)) #image of balrog
 
@@ -68,17 +69,17 @@ while running == True:
     x_balrog += 1
 
     if x_gandalf > 800:
-        x_gandalf = -120
+        x_gandalf = 200
 
     if x_balrog > 800:
-        x_balrog = -260
+        x_balrog = 80
 
-    nuvemVai += 1
+    nuvemVai +=0.1
     if nuvemVai > 800:
-        nuvemVai = -120
+        nuvemVai = 0
 
-    nuvemVai2 += 1
+    nuvemVai2 += 0.1
     if nuvemVai2 > 800:
-        nuvemVai2 = -120
+        nuvemVai2 = 0
 
     display.update()
