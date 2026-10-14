@@ -70,7 +70,7 @@ def criptografa_cesar (senha):
 
 #usando a carta DE REVERSO NA CRIPTOGRAFIA DO CEZINHHA DO PNEU
 
-def descriptografa_cesar(senha):
+#def descriptografa_cesar(senha):
     novaSenha = ""
 
     for char in senha:
