@@ -17,8 +17,8 @@ lista_qnt_por_faixa = [0] * qnt_faixas
 
 
 for i in range(len(lista_nums)):
-    #if lista_nums[i] == maior_num:
-
+    if lista_nums[i] == maior_num:
+        lista_qnt_por_faixa [-1] += 1
     for j in range (len(lista_qnt_por_faixa)):
         lim_inf = menor_num + tam_faixa * j 
         lim_sup = lim_inf + tam_faixa
