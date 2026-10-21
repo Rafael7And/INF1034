@@ -1,6 +1,6 @@
 import pygame, sys
 from pygame.locals import QUIT, KEYDOWN
-#criar 3 variaveis para cada uma / gandalf spritesheet
+#criar 3 variaveis para cada uma / gandalf spritesheet ou o Hipotetico
 
 
 clock = pygame.time.Clock()
