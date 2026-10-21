@@ -1,5 +1,7 @@
 import pygame, sys
 from pygame.locals import QUIT, KEYDOWN
+#criar 3 variaveis para cada uma / gandalf spritesheet
+
 
 clock = pygame.time.Clock()
 
@@ -85,12 +87,15 @@ while True:
 
     # Desenho dos elementos na tela
     screen.fill((255,255,255))
-    screen.blit(megaman_spritesheet, (pos_x,0),(60*hero_curr_frame)) #corta a spritesheet >> eu vou passar a posição da imagem, x e y; cm meu frame ta 60, vou de 0 a 60
 
+    if hero_curr_frame < 5:
+        screen.blit(megaman_spritesheet, (pos_x,0),(60*hero_curr_frame,0,60,60)) #corta a spritesheet >> eu vou passar a posição da imagem, x e y; cm meu frame ta 60, vou de 0 a 60
+    else:
+        screen.blit(megaman_spritesheet, (pos_x,0),(60*hero_curr_frame,-5,60,60))
 
 
     # screen.blit(dog_img, (0, 0))
-    screen.blit(hero_walk_list[curr_frame], (0, 0))
+        screen.blit(hero_walk_list[curr_frame], (0, 0))
 
     # if curr_frame_mm < 5:
     #     screen.blit(megaman_spritesheet, (200, 200), (60 * curr_frame_mm, 0, 60, 60))
